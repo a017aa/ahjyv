@@ -1,0 +1,118 @@
+:root {
+  --bg-page:       #1C1B22;  /* page background */
+  --bg-card:       #131218;  /* link row background */
+  --border-accent: #3C3489;  /* link row border */
+
+  --accent-primary:   #7F77DD; /* avatar fill, highlights */
+  --accent-light:     #EEEDFE; /* text on avatar / strong contrast */
+  --accent-soft:      #AFA9EC; /* subtitle text */
+  --accent-mid:       #CECBF6; /* link row text */
+
+  --text-heading:  #F4F3FB;  /* name / main heading */
+  --text-muted:    #5F5E5A;  /* footer / caption text */
+
+  --card-radius: 25px;
+  --btn-radius: 8px;
+
+  --fill-hover: #534AB7;   /* solid accent fill on hover */
+  --text-on-fill: #F4F3FB; /* text flips to near-white for contrast */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat' , sans-serif;
+}
+
+body{
+    background-color: var(--bg-page);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.card{
+    background-color: var(--bg-card);
+    border-radius: var(--card-radius);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.name{
+    color: var(--text-heading);
+    font-weight: 500;
+}
+
+.about{
+    color: var(--accent-primary);
+    font-weight: 500;
+}
+
+.links{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
+.btn{
+    border: 0.5px solid var(--border-accent);
+    border-radius: var(--btn-radius);
+    padding: 0.5rem;
+    text-decoration: none;
+    color: var(--accent-mid);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5px;
+}
+
+.btn i {
+  font-family: "tabler-icons" !important;
+  font-size: 18px;
+}
+
+.ig , .sp , .st , .git {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.ig:hover , .sp:hover , .st:hover , .git:hover{
+  transform: scale(1.03);
+  background-color: var(--fill-hover);
+}
+
+@keyframes cardEnter {
+   from { opacity: 0; transform: scale(0.96); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.card {
+  animation: cardEnter 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@media (max-width:768px){
+    body{
+        min-height: 100vh;
+    }
+    .card{
+        width: 75%;
+    }
+
+}
