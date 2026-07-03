@@ -1,23 +1,22 @@
 :root {
   --bg-page:       #1C1B22;  
   --bg-card:       #131218;  
-  --border-accent: #3C3489;  /* link row border */
+  --border-accent: #3C3489; 
 
-  --accent-primary:   #7F77DD; /* avatar fill, highlights */
-  --accent-light:     #EEEDFE; /* text on avatar / strong contrast */
-  --accent-soft:      #AFA9EC; /* subtitle text */
-  --accent-mid:       #CECBF6; /* link row text */
+  --accent-primary:   #7F77DD;
+  --accent-light:     #EEEDFE; 
+  --accent-soft:      #AFA9EC; 
+  --accent-mid:       #CECBF6;
 
-  --text-heading:  #F4F3FB;  /* name / main heading */
-  --text-muted:    #5F5E5A;  /* footer / caption text */
+  --text-heading:  #F4F3FB;  
+  --text-muted:    #5F5E5A;  
 
   --card-radius: 25px;
   --btn-radius: 8px;
 
-  --fill-hover: #534AB7;   /* solid accent fill on hover */
-  --text-on-fill: #F4F3FB; /* text flips to near-white for contrast */
-}
-
+  --fill-hover: #534AB7;  
+  --text-on-fill: #F4F3FB;
+  
 *{
     margin: 0;
     padding: 0;
@@ -64,8 +63,6 @@ body{
 
 .subcard{
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
     background-color: var(--bg-card);
     border: 0.5px solid var(--border-accent);
     border-radius: var(--btn-radius);
