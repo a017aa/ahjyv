@@ -1,6 +1,6 @@
 :root {
-  --bg-page:       #1C1B22;  /* page background */
-  --bg-card:       #131218;  /* link row background */
+  --bg-page:       #1C1B22;  
+  --bg-card:       #131218;  
   --border-accent: #3C3489;  /* link row border */
 
   --accent-primary:   #7F77DD; /* avatar fill, highlights */
